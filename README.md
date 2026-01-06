@@ -17,7 +17,7 @@ Here are some ideas to get you started:
 # Hi, I'm Rishabh 👋
 
 
-🔒 **Red/BLue Teaming and Networking Ethusiast**  
+🔒 **Red/Blue Teaming and Networking Ethusiast**  
 🐍 **Bachelor of Computer Science**   
 🛠️ I take part in Web/Mobile Application Penetration Testing  
 ⚔️ I participate in CTF events + solve labs  
