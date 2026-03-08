@@ -24,7 +24,7 @@ This GitHub is my portfolio: build notes, configs, automation, and test plans th
 
 ---
 
-## 🔥 Featured Projects
+## Projects
 
 ### 1) Routed Multi-Site Network Lab (OSPF, VLANs, ACLs, Cloud-ready)
 **Tech:** VMware, Debian, FRR (OSPF), 802.1Q VLANs, iptables, routing/security testing  
