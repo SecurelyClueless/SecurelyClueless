@@ -48,14 +48,19 @@ router-on-a-stick, and edge **NAT/PAT** with ISP failover validation.
 ## Skills
 
 **Detection & Response** — alert triage, SIEM design, log analysis, MITRE ATT&CK, detection validation, security hardening
+
 **SIEM / Telemetry** — Elasticsearch, Logstash, Kibana, Beats (Filebeat/Metricbeat/Winlogbeat), Sysmon, Winlogbeat
+
 **Networking** — TCP/IP, VLSM subnetting, OSPF/OSPFv2, VLANs, 802.1Q, inter-VLAN routing, NAT/PAT, segmentation
+
 **Systems** — Linux (Debian/Ubuntu), systemd, iptables, SSH/SFTP · Windows Server AD DS / DNS / DHCP / GPO
+
 **Automation** — Python, Bash, PowerShell, Ansible · Git · VMware
+
 **Offensive (internship exposure)** — web app pentesting, Burp Suite, nmap
 
 ---
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin)](https://linkedin.com/in/rishabh-sharma-482a4321a)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github)](https://github.com/SecurelyClueless)
-[![Hack The Box](https://img.shields.io/badge/Hack%20The%20Box-black?logo=hackthebox&logoColor=green)](https://app.hackthebox.com/profile/SecurelyClueless)
+[![Hack The Box](https://img.shields.io/badge/Hack%20The%20Box-black?logo=hackthebox&logoColor=green)](https://profile.hackthebox.com/profile/01a043e2-fb2f-709c-bb53-e508aa83d6df?utm_medium=copy_url)
