@@ -1,93 +1,61 @@
+# Rishabh Sharma — Security Engineering · Detection & Response · SecOps
 
-<!--
-**SecurelyClueless/SecurelyClueless** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Master of Cyber Security (UTS, 2026). I build hands-on labs and automation that
+mirror real enterprise detection and response — SIEM pipelines, homelab telemetry,
+and LLM-assisted triage — then document them so the work is reproducible, not just claimed.
 
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
-
-# Rishabh Sharma — Cybersecurity | Network Engineering | Systems & Automation
-
-I build hands-on labs that simulate real enterprise environments across **networking, security operations, and system administration**.  
-This GitHub is my portfolio: build notes, configs, automation, and test plans that prove what I can do.
-
-- Focus areas: **SecOps / SIEM (ELK)**, **Linux security**, **Routing & Switching (OSPF/VLANs/NAT)**, **Windows Server (AD DS/GPO/DNS/DHCP)**, **Automation (Bash/PowerShell/Ansible)**
-- Location: Sydney, Australia (open to relocate)
+📍 Sydney, Australia · full working rights
+🔗 [rish-infosec.co](https://rish-infosec.co) · ✉️ rishabhh.infosec@gmail.com
 
 ---
 
-## Projects
+## Featured Projects
 
-### 1) Routed Multi-Site Network Lab (OSPF, VLANs, ACLs, Cloud-ready)
-**Tech:** VMware, Debian, FRR (OSPF), 802.1Q VLANs, iptables, routing/security testing  
-**Highlights**
-- Built a virtual multi-site network (branch + core) with **OSPF**, **VLAN segmentation**, and **inter-VLAN routing**
-- Implemented **ACL-style firewall policies** and end-to-end reachability between user/server subnets across sites
-- Documented **build notes + test plan** and validation results
+### 🤖 ai-soc-analyst — Automated Tier-1 SOC Triage
+Automates Tier-1 alert triage end-to-end.
+- **Enrichment:** AbuseIPDB + VirusTotal reputation lookups on observables
+- **Validation:** maps and validates alerts against **MITRE ATT&CK**
+- **LLM triage:** Claude API integration with anti-hallucination guardrails to produce structured verdicts
+- **SIEM:** Elasticsearch/Kibana ingesting **Sysmon + Winlogbeat** from a Windows DC
+`Python` · `Elasticsearch` · `Claude API` · `MITRE ATT&CK` · `Sysmon`
+
+### 🔎 ai-ops-rca-engine — AIOps Root-Cause Analysis *(in progress)*
+Ingests homelab telemetry, correlates events across a network topology, and uses an
+LLM to produce **ranked root-cause hypotheses**.
+- Multi-node homelab (`log-server`, `V1`, `dc01`) across two subnets
+- **Beats** telemetry (Filebeat, Metricbeat, Winlogbeat) over a dedicated management plane
+- Modular Python ingestion + correlation pipeline
+`Python` · `Elasticsearch` · `Beats` · `LLM correlation`
+
 ---
 
-### 2) Mini Enterprise Home Lab & Automation (AD, DNS/DHCP, File Services, IaC)
-**Tech:** Windows Server (AD DS, DNS, DHCP, GPO), Linux servers, PowerShell, Bash, Ansible, Git  
-**Highlights**
-- Deployed an enterprise-style environment: **Active Directory**, **Group Policy**, and integrated Linux services
-- Implemented baseline hardening: **least privilege**, service access controls, backups, and operational docs
-- Automated provisioning/configuration with **PowerShell + Ansible/Bash**, version-controlled in Git
+## Infrastructure & Networking Labs
+
+### Enterprise ELK SIEM + Active Directory Homelab
+Centralised logging/SIEM with ELK; detection validation against generated test events;
+hardened services with iptables and systemd. Windows Server AD DS / DNS / DHCP / GPO.
+
+### Routed Multi-Site Network Lab
+VMware + Debian + FRR. **OSPF**, 802.1Q VLAN segmentation, inter-VLAN routing, and
+ACL-style firewall policy with end-to-end reachability testing and a documented test plan.
+
+### Enterprise Network Design (Cisco IOS)
+Multi-site IPv4 **VLSM** design with static/default routing + **OSPFv2**, VLANs / trunking /
+router-on-a-stick, and edge **NAT/PAT** with ISP failover validation.
+
 ---
 
-### 3) Home-lab Infrastructure Project (Linux, ELK, DNS/DHCP, iptables)
-**Tech:** Linux (Debian/Ubuntu), BIND9, Apache2, SSH/SFTP, ELK, IDS/IPS tooling, NAS concepts  
-**Highlights**
-- Multi-subnet lab with Linux router + core services
-- **Centralised logging/SIEM** with ELK and detection validation using test events
-- Hardened services with **iptables** and secure **systemd** configuration 
+## Skills
+
+**Detection & Response** — alert triage, SIEM design, log analysis, MITRE ATT&CK, detection validation, security hardening
+**SIEM / Telemetry** — Elasticsearch, Logstash, Kibana, Beats (Filebeat/Metricbeat/Winlogbeat), Sysmon, Winlogbeat
+**Networking** — TCP/IP, VLSM subnetting, OSPF/OSPFv2, VLANs, 802.1Q, inter-VLAN routing, NAT/PAT, segmentation
+**Systems** — Linux (Debian/Ubuntu), systemd, iptables, SSH/SFTP · Windows Server AD DS / DNS / DHCP / GPO
+**Automation** — Python, Bash, PowerShell, Ansible · Git · VMware
+**Offensive (internship exposure)** — web app pentesting, Burp Suite, nmap
+
 ---
 
-### 4) Enterprise Network Design & Configuration (Hands-on Cisco)
-**Tech:** Cisco IOS, OSPFv2, VLANs, 802.1Q trunking, Router-on-a-stick, NAT/PAT, ISP failover testing  
-**Highlights**
-- Designed multi-site **IPv4 (VLSM)** network using static/default routing + **OSPFv2**
-- Configured **VLANs/trunks/inter-VLAN routing** and edge **NAT/PAT + static NAT**
-- Verified routing/switching/redundancy using standard test procedures and Cisco validation commands
----
-
-## 🧰 Skills & Technologies
-
-**Cybersecurity / SecOps**
-- Log analysis, alert triage, SIEM fundamentals, security hardening, secrets/credential handling
-- VAPT fundamentals (internship exposure)
-
-**SIEM / Monitoring**
-- ELK Stack: Elasticsearch, Logstash, Kibana
-- Centralised logging design + validation with test events
-
-**Networking**
-- TCP/IP, OSI, IPv4 subnetting (VLSM), OSPF/OSPFv2
-- VLANs, 802.1Q trunking, inter-VLAN routing, NAT/PAT, ACL concepts, segmentation
-
-**Systems / Platforms**
-- Linux admin (Debian/Ubuntu), systemd, SSH/SFTP, iptables
-- Windows Server: AD DS, DNS, DHCP, GPO (homelab)
-
-**Automation / Tools**
-- Bash, PowerShell, Ansible
-- Git/GitHub, documentation (runbooks, build notes, test plans)
-- VMware virtual lab environments
-
-
-## Interests
-`CYBER SECURITY` `PENETRATION TEST` `NETWORK ENGINEERING` `SECURITY OPERATION CENTER`  
-`WEB DEVELOPMENT` 
-
-
-
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin)](https://linkedin.com/in/your-profile)
-[![Hack The Box](https://img.shields.io/badge/Hack%20The%20Box-black?logo=hackthebox&logoColor=green)](https://app.hackthebox.com/profile/your-username)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin)](https://linkedin.com/in/rishabh-sharma-482a4321a)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github)](https://github.com/SecurelyClueless)
+[![Hack The Box](https://img.shields.io/badge/Hack%20The%20Box-black?logo=hackthebox&logoColor=green)](https://app.hackthebox.com/profile/SecurelyClueless)
